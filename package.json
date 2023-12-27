@@ -1,0 +1,53 @@
+{
+  "name": "csv-to-sql",
+  "description": "Online CSV to SQL Converter",
+  "private": "false",
+  "version": "0.0.2",
+  "author": {
+    "email": "devlopersabbir@gmail.com",
+    "name": "Sabbir Hossain Shuvo",
+    "url": "https://github.com/devlopersabbir"
+  },
+  "bugs": {
+    "email": "devlopersabbir@gmail.com",
+    "url": "https://github.com/dev-sabbirs/csv-to-sql/issues/new"
+  },
+  "categories": [
+    "Extension Packs"
+  ],
+  "keywords": [
+    "csv-to-sql",
+    "csv-converter",
+    "sql-maker"
+  ],
+  "license": "MIT",
+  "repository": {
+    "directory": "/",
+    "type": "git",
+    "url": "https://github.com/dev-sabbirs/csv-to-sql"
+  },
+  "homepage": "https://github.com/devlopersabbir",
+  "scripts": {
+    "dev": "nodemon src/main.ts",
+    "test": "",
+    "build": "tsc",
+    "start": ""
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.29.2",
+    "fastify": "^4.25.2",
+    "pg": "^8.11.3",
+    "zennv": "^0.1.1",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "@types/pg": "^8.10.9",
+    "drizzle-kit": "^0.20.9",
+    "nodemon": "^3.0.2",
+    "pino": "^8.17.2",
+    "pino-pretty": "^10.3.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
