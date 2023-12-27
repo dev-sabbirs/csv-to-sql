@@ -1,0 +1,30 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "devlopersabbir",
+      "name": "Sabbir Hossain Shuvo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/82939905?v=4",
+      "profile": "https://github.com/devlopersabbir",
+      "contributions": [
+        "code",
+        "design",
+        "maintenance",
+        "ideas",
+        "review"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "csv-to-sql",
+  "projectOwner": "devlopersabbir",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true,
+  "commitConvention": "angular",
+  "commitType": "docs"
+}
