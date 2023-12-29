@@ -1,5 +1,5 @@
 import { FastifyInstance } from "fastify";
-import { buildServer, shoutDown } from "./utils";
+import { buildServer, logger, shoutDown } from "./utils";
 import { env } from "./configs";
 import { signals } from "./constants";
 
@@ -10,7 +10,7 @@ import { signals } from "./constants";
   const app: FastifyInstance = await buildServer();
   try {
     await app.listen({ port: env.PORT, host: env.HOST });
-    console.log(`Server is listening at http://${env.HOST}:${env.PORT}`);
+    logger.info(`Server is listening at http://${env.HOST}:${env.PORT}`);
   } catch (err) {
     app.log.error(err);
     process.exit(1);
