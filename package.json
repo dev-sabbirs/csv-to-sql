@@ -31,7 +31,8 @@
     "dev": "nodemon src/main.ts",
     "test": "",
     "build": "tsc",
-    "start": ""
+    "start": "",
+    "migrate:pg": "drizzle-kit generate:pg"
   },
   "dependencies": {
     "argon2": "^0.31.2",

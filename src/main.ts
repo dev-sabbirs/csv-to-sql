@@ -2,6 +2,8 @@ import { FastifyInstance } from "fastify";
 import { buildServer, logger, shoutDown } from "./utils";
 import { env } from "./configs";
 import { signals } from "./constants";
+import { migrate } from "drizzle-orm/node-postgres/migrator";
+import { db } from "./database";
 
 /**
  * Run the server
@@ -9,6 +11,9 @@ import { signals } from "./constants";
 (async () => {
   const app: FastifyInstance = await buildServer();
   try {
+    await migrate(db, {
+      migrationsFolder: "./migrations",
+    });
     await app.listen({ port: env.PORT, host: env.HOST });
     logger.info(`Server is listening at http://${env.HOST}:${env.PORT}`);
   } catch (err) {
